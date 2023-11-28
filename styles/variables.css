@@ -1,1 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+ :root {
+    /* пишем здесь стили для светлой темы, в темной значения переменных поменяем */
+    --main-font-family: "Inter-Variable", sans-serif;
+    --accent-font-family: "PressStart2P-Regular", sans-serif;
+    --card-text-font-weight: 400;
+    --card-title-font-weight: 700;
+    --background-color: #fff;
+    
+    --accent-color: #000 ;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient( #e7e7e7 0 2px, #1a1a1a 2px 4px);
+     /* repeating-linear-gradient( #e7e7e7 0 2px, #1a1a1a 2px 4px); */
+     --content-width: clamp(320px, 700px, 700px);
+     --label-stroke-color: rgba(255, 255, 255, .6);
+ }
+
+ @media (width <= 375px){
+   .content {
+     --content-width: 100vw;
+   }
+
+   .saving_button {
+    flex-direction: column;
+   }
+ }
