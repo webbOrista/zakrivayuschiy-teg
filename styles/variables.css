@@ -1,26 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
  :root {
     /* пишем здесь стили для светлой темы, в темной значения переменных поменяем */
-    --main-font-family: "Inter-Variable", sans-serif;
-    --accent-font-family: "PressStart2P-Regular", sans-serif;
+    --main-font-family: "Inter", sans-serif;
+    --accent-font-family: "Press Start 2P",fantasy;
     --card-text-font-weight: 400;
     --card-title-font-weight: 700;
     --background-color: #fff;
     
     --accent-color: #000 ;
-    --background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient( #e7e7e7 0 2px, #1a1a1a 2px 4px);
-     /* repeating-linear-gradient( #e7e7e7 0 2px, #1a1a1a 2px 4px); */
-     --content-width: clamp(320px, 700px, 700px);
-     --label-stroke-color: rgba(255, 255, 255, .6);
+    --background-image: 
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient( to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    --label-stroke-color: rgba(255, 255, 255, .6);
+    --button-text-blend-mode-color: (#fff);
+    --heart-contour-color: #000;
+    --heart-fill-color: #FF0000;
  }
 
- @media (width <= 375px){
+ @media (width < 376px){
    .content {
      --content-width: 100vw;
    }
 
-   .saving_button {
-    flex-direction: column;
-   }
+  
  }
