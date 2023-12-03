@@ -12,8 +12,20 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-/* анимация сердца */
 
+/* анимация стрелки активного пункта меню */
+
+@keyframes arrow-shaking {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 4px;
+  }
+}
+
+
+/* анимация сердца */
 
 /* Искры */
 
@@ -22,125 +34,104 @@
 }
 
 .like-icon.is-liked .sparks {
-    animation: heart-sparks 0.3s 0.3s ease-in 1 alternate;
+  animation: heart-sparks 0.3s 0.3s ease-in 1 alternate;
 }
 
-
 @keyframes heart-sparks {
-    0% {
-      fill: transparent;
-    }
-  
-    50% {
-      fill: var(--heart-fill-color);
-    }
-  
-    100% {
-      fill: transparent;
-    }
+  0% {
+    fill: transparent;
   }
 
+  50% {
+    fill: var(--heart-fill-color);
+  }
+
+  100% {
+    fill: transparent;
+  }
+}
 
 /* Сгруппированное сердце */
 
 .like-icon .heart {
-    transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
 .like-icon.is-liked .heart {
-    animation: heart-zoom 0.3s 0.1s ease-in 1 alternate;
+  animation: heart-zoom 0.3s 0.1s ease-in alternate;
 }
 
 @keyframes heart-zoom {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(1.15);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
   }
 
+  50% {
+    transform: scale(1.15);
+  }
 
+  100% {
+    transform: scale(1);
+  }
+}
 
-
-
-/* Ядро сердца */
+/* Центр сердца */
 
 .core {
-    fill: transparent;
+  fill: transparent;
   transition: fill 0.3s 0.03s;
 }
 
 .like-icon:hover .core {
-    fill: var(--heart-contour-color);
-    transition: fill 0.3s;
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s;
 }
 
-.card__icon-button:active  .core {
-    fill: var(--heart-fill-color);
-    transition: fill 0.03s;
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.03s;
 }
 
 .like-icon.is-liked .core {
-    fill: var(--heart-fill-color);
-    transition: fill 0.03s;
+  fill: var(--heart-fill-color);
+  transition: fill 0.03s;
 }
-
 
 /* Тело сердца */
 
 .main-body {
-fill: transparent;
+  fill: transparent;
   transition: fill 0.3s;
-
 }
 
 .like-icon:hover .main-body {
-    fill: var(--heart-contour-color);
-    transition: fill 0.3s 0.05s;
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s 0.05s;
 }
 
-.card__icon-button:active  .main-body {
-    fill: var(--heart-fill-color);
-    transition: fill 0.03s;
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.03s;
 }
 
 .like-icon.is-liked .main-body {
-    fill: var(--heart-fill-color);
-    transition: fill 0.03s;
+  fill: var(--heart-fill-color);
+  transition: fill 0.03s;
 }
-
-
 
 /* Контур сердца */
 
 .contour {
-fill: var(--heart-contour-color);
-transition: fill 0.5s 0.06s;
+  fill: var(--heart-contour-color);
+  transition: fill 0.5s 0.06s;
 }
 
 .like-icon.is-liked .contour {
- fill: var(--heart-fill-color);
- transition: fill 1s;
-
+  fill: var(--heart-fill-color);
+  transition: fill 1s;
 }
 
-.card__icon-button:active  .contour {
-    fill: var(--heart-contour-color);
-    transition: fill 0.03s;
+.card__icon-button:active .contour {
+  fill: var(--heart-contour-color);
+  transition: fill 0.01s;
 }
-
-
-
-
-
-
-
-
-
-
