@@ -384,7 +384,6 @@ dialog::backdrop {
 }
 
 .popup-text {
-  color: #000;
   color: inherit;
   font-family: var(--accent-font-family);
   font-weight: var(--card-text-font-weight);
