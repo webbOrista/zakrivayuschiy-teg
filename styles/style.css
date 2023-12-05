@@ -56,9 +56,6 @@
   font-size: clamp(3.063rem, 1.921rem + 4.923vw, 4.063rem);
   line-height: normal;
   text-transform: uppercase;
-}
-
-.header__logo-link {
   text-decoration: none;
 }
 
@@ -141,6 +138,7 @@ button.theme-menu__button {
   content: "▶";
   position: absolute;
   left: -18px;
+  top: 1px;
   color: var(--accent-color);
   animation: arrow-shaking 0.5s alternate infinite ease-in-out;
 }
@@ -150,7 +148,7 @@ button.theme-menu__button {
 .cards_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 54px;
+  gap: 50px;
 }
 
 .content_card {
@@ -160,7 +158,7 @@ button.theme-menu__button {
 
 .card_title {
   padding: 6px 10px;
-  font-weight: var(--card-title-font-weight);
+  font-variation-settings: "wght" var(--card-title-font-weight);
   font-size: 18px;
   font-style: normal;
 }
@@ -169,11 +167,12 @@ button.theme-menu__button {
   position: relative;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
+  margin-bottom: 25px;
 }
 
 .label {
   position: absolute;
-  top: 29px;
+  top: 25px;
   right: 25px;
   z-index: 2;
   font-family: var(--accent-font-family);
@@ -205,17 +204,15 @@ button.theme-menu__button {
   aspect-ratio: 1 / 1;
 }
 
-.card_description {
-  padding: 27px 25px;
-  font-weight: var(--card-text-font-weight);
-  font-size: 18px;
-  font-style: normal;
-  line-height: 21px;
+.card_description_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.memories_storage {
-  padding: 0 25px;
-  font-weight: var(--card-text-font-weight);
+.card_description {
+  padding: 0px 25px;
+  font-variation-settings: "wght" var(--card-text-font-weight);
   font-size: 18px;
   font-style: normal;
   line-height: 21px;
@@ -256,19 +253,18 @@ button.theme-menu__button {
 }
 
 .card__like-button {
-  position: relative;
   width: 130px;
   height: 38px;
-  border: 2px solid var(--accent-color);
   padding: 9px 0;
-  font-family: var(--accent-font-family);
-  background-color: transparent;
 }
 
 .content__animated__button {
   position: relative;
   border: 2px solid var(--accent-color);
   transition: box-shadow 0.3s ease;
+  white-space: nowrap;
+  font-family: var(--accent-font-family);
+  background-color: var(--background-color);
 }
 
 .content__animated__button:focus {
@@ -309,12 +305,8 @@ button.theme-menu__button {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  margin: 50px auto;
-  border: 2px solid var(--accent-color);
+  margin: 50px auto 105px;
   padding: 0;
-  font-family: var(--accent-font-family);
-  background-color: var(--background-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .saving_button-content-wrapper {
@@ -334,6 +326,7 @@ button.theme-menu__button {
   font-weight: var(--card-text-font-weight);
   font-size: 14px;
   font-style: normal;
+  line-height: 90%;
 }
 
 .button_floppy {
@@ -343,10 +336,6 @@ button.theme-menu__button {
   min-width: 21px;
   max-width: 21px;
   fill: var(--accent-color);
-}
-
-.saving_button .button__text {
-  white-space: nowrap;
 }
 
 /* мастерим поп-ап */
@@ -384,11 +373,8 @@ dialog::backdrop {
 }
 
 .popup-text {
-  color: inherit;
-  font-family: var(--accent-font-family);
-  font-weight: var(--card-text-font-weight);
-  font-size: 14px;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 .popup-submit-button {
@@ -398,6 +384,7 @@ dialog::backdrop {
   background-color: transparent;
   transition: box-shadow 0.3s ease;
   inline-size: 100%;
+  text-transform: uppercase;
 }
 
 /* стилизуем фильтры */
@@ -441,10 +428,6 @@ dialog::backdrop {
 
   .header__title {
     margin-top: 16px;
-  }
-
-  .memories_storage {
-    padding: 17px 25px 15px;
   }
 
   .label {

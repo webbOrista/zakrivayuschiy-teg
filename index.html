@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <!-- "Наставник: favicon.ico и отдельную иконку для устройств на ios можно не добавлять" -->
     <link rel="shortcut icon" href="images/favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header content">
-      <p class="header__logo">
-        <a class="header__logo-link"> &lt;/html&gt;</a>
-      </p>
+        <a class="header__logo"> &lt;/html&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -51,26 +50,28 @@
       <section class="cards_wrapper content">
         <article class="content_card">
           <h2 class="card_title">
-            Фритрек и нулевой спринт: Подготовка к работе
+            Фритрек и нулевой спринт: Подготовка&nbsp;к работе
           </h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;start&gt;</p>
+            <span class="label">&lt;start&gt;</span>
             <img
               class="card_picture modify-contrast-brightness-filter"
               src="./images/jpeg-optimizer_start.jpg"
               alt="легкоатлет на старте"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             Это было самое начало пути. На этом этапе важно было проникнуться
-            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            основами и настроиться на учёбу. И, возможно,&gt;подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний о начале обучения.
           </p>
-          <footer class="card_footer">
-            <button class="card__icon-button">
+        </div>
+          <div class="card_footer">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,21 +110,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button content__animated__button">
-              <span class="button__text">like</span>
+            <button class="card__like-button content__animated__button" type="button">
+              <span class="button__text">Like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">1 спринт: Я — чистый лист</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;onward&gt;</p>
+            <span class="label">&lt;onward&gt;</span>
             <img
               class="card_picture modify-saturation-filter"
               src="./images/jpeg-optimizer_blank.jpg"
               alt="пустая открытая тетрадь"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
@@ -131,10 +133,11 @@
             ощущением скрываются более глубокие вопросы: с чего начать? а вдруг
             будет слишком сложно? что, если я не справлюсь?
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний о начале первого спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -177,29 +180,31 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">
-            Фритрек и нулевой спринт: Подготовка к работе
+            1 спринт: А если не получится?
           </h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;/done&gt;</p>
+            <span class="label">&lt;/done&gt;</span>
             <img
               class="card_picture .modify-grascale-filter"
               src="./images/jpeg-optimizer_happiness.jpg"
               alt="обрадованный мужчина"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
             наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -242,18 +247,19 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">2 спринт: Погоня за идеалом</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;Perfectless&gt;</p>
+            <span class="label">&lt;Perfectless&gt;</span>
             <img
               class="card_picture modify-sepia-filter"
               src="./images/jpeg-optimizer_precision.jpg"
               alt="измерительная лента"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
@@ -261,10 +267,11 @@
             подвержены перфекционизму и вместо того, чтобы сделать идеально,
             старались просто сделать.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний о начале второго спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -307,18 +314,19 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">2 спринт: О тех, кто рядом</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;Support&gt;</p>
+            <span class="label">&lt;Support&gt;</span>
             <img
               class="card_picture modify-opacity-filter"
               src="./images/jpeg-optimizer_support.jpg"
               alt="круг сложенных в кулак рук"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
@@ -327,10 +335,11 @@
             Осваивать что-то новое легче, когда рядом есть единомышленники, не
             правда ли?
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -373,27 +382,29 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">3 спринт: Обходные стратегии</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;brainstorm&gt;</p>
+            <span class="label">&lt;brainstorm&gt;</span>
             <img
               class="card_picture modify-invert-filter"
               src="./images/jpeg-optimizer_exhausted.jpg"
               alt="сосредоточенный мужчина"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
             время посмотреть на задачу под другим углом.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -436,18 +447,19 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">3 спринт: Когда опускаются руки</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;concentration&gt;</p>
+            <span class="label">&lt;concentration&gt;</span>
             <img
               class="card_picture modify-hue-rotate-filter"
               src="./images/jpeg-optimizer_inspiration.jpg"
               alt="медитирующий человек"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -455,10 +467,11 @@
             В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -501,18 +514,19 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
         <article class="content_card">
           <h2 class="card_title">«Сейчас я здесь»</h2>
           <div class="card_picture_wrapper">
-            <p class="label">&lt;moment&gt;</p>
+            <span class="label">&lt;moment&gt;</span>
             <img
               class="card_picture modify-blur-filter"
               src="./images/jpeg-optimizer_wide_space.jpg"
               alt="человек стоит на вершине горы"
             />
           </div>
+          <div class="card_description_wrapper">
           <p class="card_description">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
@@ -521,11 +535,12 @@
             это тот случай, когда важен сам процесс познания. Ведь часто путь —
             и есть результат.
           </p>
-          <p class="memories_storage">
+          <p class="card_description">
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в
             этой точке пути.
           </p>
-          <footer class="card_footer">
+        </div>
+          <div class="card_footer">
             <button class="card__icon-button">
               <svg
                 class="like-icon"
@@ -568,7 +583,7 @@
             <button class="card__like-button content__animated__button">
               <span class="button__text">like</span>
             </button>
-          </footer>
+          </div>
         </article>
       </section>
       <button
@@ -581,7 +596,7 @@
           <svg class="button_floppy" viewBox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span class="button__text">Сохранить на память</span></span
+          <span class="button__text">Сохранить на&nbsp;память</span></span
         >
       </button>
     </main>
@@ -590,7 +605,7 @@
         <svg class="button_floppy" viewBox="0 0 39 39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <h2 class="popup-title-text popup-text">
+        <h2 class="popup-title-text button__text popup-text">
           Вставьте дискету, чтобы продолжить
         </h2>
       </div>
@@ -599,8 +614,7 @@
           class="popup-submit-button content__animated__button"
           type="submit"
         >
-          <span class="visually-hidden">.</span
-          ><span class="popup-text">Ок</span>
+            <span class="button__text">Ок</span>
         </button>
       </form>
     </dialog>
