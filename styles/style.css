@@ -55,8 +55,8 @@
   font-weight: var(--card-text-font-weight);
   font-size: clamp(3.063rem, 1.921rem + 4.923vw, 4.063rem);
   line-height: normal;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__title {
@@ -137,8 +137,8 @@ button.theme-menu__button {
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -18px;
   top: 1px;
+  left: -18px;
   color: var(--accent-color);
   animation: arrow-shaking 0.5s alternate infinite ease-in-out;
 }
@@ -158,16 +158,16 @@ button.theme-menu__button {
 
 .card_title {
   padding: 6px 10px;
-  font-variation-settings: "wght" var(--card-title-font-weight);
   font-size: 18px;
   font-style: normal;
+  font-variation-settings: "wght" var(--card-title-font-weight);
 }
 
 .card_picture_wrapper {
   position: relative;
+  margin-bottom: 25px;
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  margin-bottom: 25px;
 }
 
 .label {
@@ -212,10 +212,10 @@ button.theme-menu__button {
 
 .card_description {
   padding: 0px 25px;
-  font-variation-settings: "wght" var(--card-text-font-weight);
   font-size: 18px;
   font-style: normal;
   line-height: 21px;
+  font-variation-settings: "wght" var(--card-text-font-weight);
 }
 
 .card_footer {
@@ -261,10 +261,10 @@ button.theme-menu__button {
 .content__animated__button {
   position: relative;
   border: 2px solid var(--accent-color);
-  transition: box-shadow 0.3s ease;
-  white-space: nowrap;
   font-family: var(--accent-font-family);
   background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
+  white-space: nowrap;
 }
 
 .content__animated__button:focus {
@@ -351,7 +351,7 @@ dialog::backdrop {
   min-width: 341px;
   max-width: 357px;
   border: 2px solid var(--accent-color);
-  padding: 32px 32px;
+  padding: 30px 30px;
   color: var(--accent-color);
   background-color: var(--background-color);
 }
@@ -380,11 +380,11 @@ dialog::backdrop {
 .popup-submit-button {
   min-width: 257px;
   border: 2px solid var(--accent-color);
-  padding: 12px 17px 8px;
+  padding: 10px 17px;
+  text-transform: uppercase;
   background-color: transparent;
   transition: box-shadow 0.3s ease;
   inline-size: 100%;
-  text-transform: uppercase;
 }
 
 /* стилизуем фильтры */
@@ -422,10 +422,6 @@ dialog::backdrop {
 }
 
 @media (width < 376px) {
-  .saving_button-content-wrapper {
-    flex-direction: column;
-  }
-
   .header__title {
     margin-top: 16px;
   }
@@ -435,8 +431,16 @@ dialog::backdrop {
     right: 11px;
   }
 
+  .saving_button-content-wrapper {
+    flex-direction: column;
+  }
+
   .button_floppy {
     min-width: 28px;
     max-width: 28px;
+  }
+
+  .saving_button-popup[open] {
+    padding: 30px 42px;
   }
 }
