@@ -1,0 +1,22 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "Проект \"Закрывающий тег\"\r Ссылка на репозиторий: https://github.com/Ubiquitousoul/zakrivayuschiy-teg-f.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
