@@ -2,7 +2,7 @@
 
 **Формат проекта**: Одностраничный сайт с возможностью переключения темы оформления и анимированным лайком карточки.
 
-## [Посмотреть проект](https://webborista.github.io/zakrivayuschiy-teg-f/)
+## [Посмотреть проект](https://webborista.github.io/zakrivayuschiy-teg/)
 
 ---
 
