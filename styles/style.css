@@ -321,7 +321,7 @@ button.theme-menu__button {
   min-width: 21px;
   max-width: 21px;
   fill: var(--accent-color);
-  mix-blend-mode: difference;
+  mix-blend-mode: var(--button-mix-blend-mode);
 }
 
 dialog::backdrop {
